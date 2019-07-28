@@ -32,10 +32,10 @@ usage() {
 }
 
 sdcard() {
-	echo "Formatting SD card"
-	umount /external_sd
-	make_ext4fs $SDDEV
-	mount /external_sd
+#	echo "Formatting SD card"
+#	umount /external_sd
+#	make_ext4fs $SDDEV
+#	mount /external_sd
 	echo "Extracting rootfs"
 	/sbin/busybox-armv7l tar -C /external_sd/ -xzpf $ROOTFS
 	echo "Backing up laf image to /cache"
@@ -47,17 +47,17 @@ sdcard() {
 }
 
 internal() {
-	echo "Formatting data"
-        umount /data
-        make_ext4fs $DATADEV
-        mount /data
+#	echo "Formatting data"
+#        umount /data
+#        make_ext4fs $DATADEV
+#        mount /data
         echo "Extracting rootfs"
         /sbin/busybox-armv7l tar -C /data/ -xzpf $ROOTFS
 	echo "Backing up boot image to /cache"
-	dd if=$DATADEV of=/cache/bootbak.img
+	dd if=$BOOTPART of=/cache/bootbak.img
         echo "Flashing boot image"
-        dd if=/dev/zero of=$DNLDPART
-        dd if=boot-data.img of=$DNLDPART
+        dd if=/dev/zero of=$BOOTPART
+        dd if=boot-data.img of=$BOOTPART
         echo "Done! Reboot into Ubuntu by powering on normally."
 }
 
