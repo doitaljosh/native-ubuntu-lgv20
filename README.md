@@ -10,7 +10,9 @@ Native Ubuntu for the LG V20
 - Download the rootfs using the google drive link found in this readme. Copy it to the native-ubuntu-lgv20 folder.
 - If you are installing Ubuntu to an SD card, copy the folder to your phone's internal storage.
 - If you are installing Ubuntu to the internal storage, copy the folder to your phone's SD card.
-- Boot into TWRP, then open Advanced->Terminal.
+- Boot into TWRP, then wipe data if you are installing to internal storage. Use an empty ext4 formatted SD card if installing to the SD card. 
+- Restart TWRP after wiping data or sdcard.
+- Open Advanced->Terminal.
 - ```cd``` to either ```/sdcard/native-ubuntu-lgv20``` (installing to SD) or ```/external_sd/native-ubuntu-lgv20``` (installing to internal).
 - Run ```./install.sh sdcard``` or ```./install.sh internal```. For help, run ```./install.sh help```
 - Wait for the process to complete.
