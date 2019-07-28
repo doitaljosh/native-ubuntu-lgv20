@@ -14,7 +14,7 @@ Native Ubuntu for the LG V20
 - Restart TWRP after wiping data or sdcard.
 - Open Advanced->Terminal.
 - ```cd``` to either ```/sdcard/native-ubuntu-lgv20``` (installing to SD) or ```/external_sd/native-ubuntu-lgv20``` (installing to internal).
-- Run ```./install.sh sdcard``` or ```./install.sh internal```. For help, run ```./install.sh help```
+- Run ```sh install.sh sdcard``` or ```sh install.sh internal```. For help, run ```sh install.sh help```
 - Wait for the process to complete.
 
 # Rootfs download link: (was too large for GitHub)
