@@ -18,7 +18,7 @@ Native Ubuntu for the LG V20
 - Wait for the process to complete.
 
 # Rootfs download link: (was too large for GitHub)
-Link: [ubuntu-1804-rootfs-elsa.tar.gz](https://drive.google.com/open?id=1Xg-6hLnFV5t11H_v28tjxh-7QvxTSIlB)
+Link: [ubuntu-1804-r0.2-elsa.tar.gz](https://drive.google.com/open?id=1bwg7jDnIl-fbfcCYbTI9GvaT5KOIRtxh)
 
 ## Default login
 ### Username: ```ubuntu```

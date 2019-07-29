@@ -4,7 +4,7 @@ DATADEV='/dev/block/sda20'
 SDDEV='/dev/block/mmcblk0p1'
 BOOTPART='/dev/block/bootdevice/by-name/boot'
 DNLDPART='/dev/block/bootdevice/by-name/laf'
-ROOTFS='ubuntu-1804-rootfs-elsa.tar.gz'
+ROOTFS='ubuntu-1804-r0.2-elsa.tar.gz'
 
 cp busybox-armv7l /sbin/
 chmod +x /sbin/busybox-armv7l
